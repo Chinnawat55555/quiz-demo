@@ -28,21 +28,18 @@ const choiceOnChange = (No) => {
             document.getElementById("choice4").innerHTML = "4) อำนาจเจริญ";
             document.getElementById("answer-alert").innerHTML = "";
             buttonDisable(false);
-            onFinish()
+        }, time)
+    } else if (No === 3) {
+        setTimeout(() => {
+            document.getElementById("No").innerHTML = "คะแนนที่ได้";
+            document.getElementById("question").innerHTML = score;
+            document.getElementById("choice1").style.display = "none";
+            document.getElementById("choice2").style.display = "none";
+            document.getElementById("choice3").style.display = "none";
+            document.getElementById("choice4").style.display = "none";
+            document.getElementById("answer-alert").innerHTML = "";
         }, time)
     }
-}
-
-const onFinish = () => {
-    setTimeout(() => {
-        document.getElementById("No").innerHTML = "คะแนนที่ได้";
-        document.getElementById("question").innerHTML = score;
-        document.getElementById("choice1").style.display = "none";
-        document.getElementById("choice2").style.display = "none";
-        document.getElementById("choice3").style.display = "none";
-        document.getElementById("choice4").style.display = "none";
-        document.getElementById("answer-alert").innerHTML = "";
-    }, time)
 }
 
 const buttonDisable = (isDisable) => {

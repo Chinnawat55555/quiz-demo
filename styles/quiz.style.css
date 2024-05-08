@@ -15,8 +15,8 @@ body {
     border-radius: 8px;
     padding: 24px;
     box-shadow: 0 0 10px #B6B7B8;
+    margin-top: -10vh;
 
-    
     h1 {
         display: flex;
         justify-content: center;
@@ -25,13 +25,11 @@ body {
     }
 
     .choices {
-        
-
         button {
             font-size: 16px;
             margin-inline: 6px;
             padding: 6px;
-            padding-inline: 4px;
+            padding-inline: 16px;
             background-color: #7C9CDB;
             border: solid 1px #7C9CDB;
             border-radius: 8px;

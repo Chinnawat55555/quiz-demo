@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./styles/quiz.style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <script src="./javascript/onSelectAnswer.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-card">
+            <h1 id="No">ข้อที่ 1</h1>
+            <h1 id="question">PIM ย่อมาจากอะไร?</h1>
+            <div class="choices">
+                <button id="choice1" onclick="onSelect('choice1')">1) พีไอเอ็ม</button>
+                <button id="choice2" onclick="onSelect('choice2')">2) ปิ๋ม</button>
+                <button id="choice3" onclick="onSelect('choice3')">3) พิม</button>
+                <button id="choice4" onclick="onSelect('choice4')">4) ภีม</button>
+            </div>
+            <h2 id="answer-alert"></h2>
+        </div>
+    </div>
+</body>
+</html>
